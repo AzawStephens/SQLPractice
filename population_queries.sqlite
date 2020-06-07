@@ -1,0 +1,35 @@
+-- This is the first query:
+
+--SELECT DISTINCT year from population_years; #1
+--_______________________________________________
+-- SELECT population #2
+-- FROM population_years
+-- WHERE country = 'Gabon'
+-- ORDER BY population DESC
+-- LIMIT 1;
+--_______________________________________________
+-- SELECT country, population, year --#3
+-- FROM population_years
+-- WHERE year = 2005
+-- ORDER BY population ASC
+-- LIMIT 10;
+--Add your additional queries below:
+--________________________________________________
+-- SELECT DISTINCT country --#4 CHINA, INDIA, US, INDONISIA
+--                         -- BRAZIL, Pakistan, Bangladesh, Nigeria, Russia, Japan, Mexico
+-- FROM population_years
+-- WHERE population > 100
+-- AND year = 2010
+-- ORDER BY population DESC;
+--________________________________________________
+
+-- SELECT country  #5 Answer 9
+-- FROM population_years
+-- WHERE country LIKE '%Islands%';
+--_________________________________________________
+-- SELECT country, population, year --#6 Answer 2,829,173
+-- FROM population_years
+-- WHERE year BETWEEN 2000 AND 2010 
+-- AND country = 'Indonesia'
+-- ORDER BY population DESC;
+
